@@ -1,0 +1,96 @@
+body{
+    background: #a3b3b6;
+    margin: 0;
+    padding:0;
+}
+header{
+    background: rgb(22, 22, 39);
+    margin-bottom: 50px;
+    
+}
+section{
+    width: 940px;
+    height: 300px;
+    margin: auto;
+    border: 1px solid rgb(22, 22, 39);
+}
+.title{
+    width: 400px;
+    margin: auto;
+    text-align: center;
+    color: rgb(235, 229, 229);
+    padding: 10px;
+    font: helvetica;
+    
+}
+.heading{
+    font-size: 15px;
+    padding: 10px;
+    width: 300px;
+    margin: auto;
+    color:rgb(235,229,229);
+    
+    
+}
+.center{
+    margin: auto;
+    text-align: center;
+    background: rgb(22, 22, 39);
+    margin-bottom: 50px;
+    border: 1px solid rgb(22, 22, 39);
+    
+}
+
+.flex-field{ 
+    margin: 23px;
+    height: auto;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    margin-top: -30px;
+    
+}
+.add{
+   padding: 100px;
+   width: 100%;
+}
+
+
+input{
+    margin-left: 8px;
+    position: absolute;
+    width: 750px;
+}
+.align{
+    margin-left: 19px;
+}
+.right{
+    margin-left: 29px;
+    width: 754px;
+}
+
+button{
+    cursor: pointer;
+}
+
+.button{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-items: end;
+    padding-right: 36px;
+    gap: 30px;
+}
+
+.content{
+    margin-top: 20px;
+}
+
+table{
+    width: 100%;
+    background: rgb(22, 22, 39);
+}
+thead{
+    color: rgb(235, 229, 229);
+    height: 20px;
+}
