@@ -57,7 +57,7 @@ body {
 }
 
 .add-todo input {
-    flex: 0.90;
+    flex: 0.9;
     padding: 8px;
     border: none;
     border-radius: 4px;

@@ -18,13 +18,20 @@
         <ul class="todo-list" id="todo-list">
         </ul>
         <div class="add-todo">
-            <input type="text" id="new-todo" placeholder="Add a new task">
-            <button>Add</button>
+            <form action="/" method="post" id="todo-form">
+                <label for="new-todo">Title</label>
+                <input type="text" id="new-todo" name="new-todo" placeholder="Add a new task" required>
+
+                <label for="new-desc">Description</label>
+                <input type="text" id="new-desc" name="new-desc" placeholder="Add a description" required>
+
+                <button type="submit">Add</button>
+            </form>
         </div>
     </div>
 
     <div class="table-container">
-        <h2> Your Todos</h2>
+        <h2>Your Todos</h2>
 
         <table>
             <thead>
@@ -37,12 +44,12 @@
             </thead>
             <tbody id="todo-table">
                 {% for todo in allTodo %}
-                <tr>
-                    <td>{{ loop.index }}</td>
-                    <td>{{ todo.title }}</td>
-                    <td>{{ todo.desc }}</td>
-                    <td>{{ todo.date_created }}</td>
-                </tr>
+                    <tr>
+                        <td>{{ loop.index }}</td>
+                        <td>{{ todo.title }}</td>
+                        <td>{{ todo.desc }}</td>
+                        <td>{{ todo.date_created }}</td>
+                    </tr>
                 {% endfor %}
             </tbody>
         </table>
