@@ -24,7 +24,8 @@
     </div>
 
     <div class="table-container">
-        <h2>  Your Todos</h2>
+        <h2> Your Todos</h2>
+
         <table>
             <thead>
                 <tr>
@@ -35,12 +36,14 @@
                 </tr>
             </thead>
             <tbody id="todo-table">
+                {% for todo in allTodo %}
                 <tr>
-                    <td>1</td>
-                    <td>First Todo</td>
-                    <td>First task</td>
-                    <td>date</td>
+                    <td>{{ loop.index }}</td>
+                    <td>{{ todo.title }}</td>
+                    <td>{{ todo.desc }}</td>
+                    <td>{{ todo.date_created }}</td>
                 </tr>
+                {% endfor %}
             </tbody>
         </table>
     </div>

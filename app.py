@@ -22,9 +22,9 @@ def hello_world():
     todo = Todo(title="first todo", desc="first task")
     db.session.add(todo)
     db.session.commit()
+    allTodo = Todo.query.all()
     css_url=url_for('static', filename='style.css')
-    return render_template('index.html', css_url=css_url)
+    return render_template('index.html', css_url=css_url,allTodo=allTodo)
 
 if __name__ == "__main__":
     app.run(debug = True)
-
